@@ -1,3 +1,5 @@
+//Une classe enfant (fille) qui hérite des proprités et méthodes d'une classe parente (is-a)
+
 class User {
     constructor(public name: string) { }
 
