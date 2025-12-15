@@ -19,9 +19,9 @@ class Cercle extends Forme {
         super(centre);
     }
 
-    // aire(): number {
-    //     return Math.PI * this.rayon ** 2;
-    // }
+    aire(): number {
+        return Math.PI * this.rayon ** 2;
+    }
 
     perimetre(): number {
         return 2 * Math.PI * this.rayon;
