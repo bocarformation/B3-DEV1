@@ -1,0 +1,20 @@
+{
+  "name": "02-stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/node": "^25.0.2",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
