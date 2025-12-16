@@ -1,1 +1,3 @@
-console.log("Coucou toi");
+import fs from "fs"
+
+const matches = fs.readFileSync
