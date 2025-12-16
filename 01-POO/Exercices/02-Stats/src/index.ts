@@ -1,15 +1,15 @@
 import fs from "fs";
 import { MatchResult } from "./MatchResult.js";
+import { CsvFileReader } from "./CsvFileReader.js";
 
-const matches =
-    fs.readFileSync("./src/football.csv", { encoding: "utf-8" })
-        .split("\n")
-        .map((line: string) => line.split(","))
-// console.log(matches);
 
+const reader = new CsvFileReader("./src/football.csv");
+reader.read();
+
+const matches = reader.data;
 
 let manUnitedWins = 0;
-matches.forEach((match: string) => {
+matches.forEach(match => {
     if (match[1] === "Man United" && match[5] === MatchResult.HOMEWIN) {
         manUnitedWins++
     }
