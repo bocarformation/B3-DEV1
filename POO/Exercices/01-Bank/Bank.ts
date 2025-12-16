@@ -15,8 +15,8 @@ export class Bank {
         this.clients.push(client);
     }
 
-    requestCreditCard(client: Client): void {
-        new CreditCard()
+    requestCreditCard(client: Client): CreditCard {
+        return new CreditCard(client.account);
     }
 }
 

@@ -8,8 +8,9 @@ export class Client {
         public lastname: string,
         public city: string,
         public salary: number,
+        public initialDeposit:number = 0
     ) {
-         this.account = new Account()
+         this.account = new Account(initialDeposit)
 }
 }
 
