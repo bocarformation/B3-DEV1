@@ -7,6 +7,8 @@ const reader = new CsvFileReader("./src/football.csv");
 reader.read();
 
 const matches = reader.data;
+console.log(matches);
+
 
 let manUnitedWins = 0;
 matches.forEach(match => {

@@ -1,6 +1,7 @@
+import type { MatchData } from "./MatchData.js";
 export declare class CsvFileReader {
     private readonly filename;
-    data: string[][];
+    data: MatchData[];
     constructor(filename: string);
     read(): void;
 }
