@@ -1,13 +1,13 @@
 
 import './App.css'
-import { Question } from './components/Question'
+import { CreatePoll } from './components/CreatePoll'
 
 function App() {
 
 
   return (
     <>
-      <Question question={{ id:"1",title: "Quel sport pratiques-tu ?" }}  />
+      <CreatePoll />
     </>
   )
 }
